@@ -2,13 +2,17 @@ package com.plugindemo.exp;
 
 
 import com.ha1ey.CandleDragon.plugin.*;
-import com.plugindemo.PluginDemo;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class EXPDEMO implements Exploit {
+    @Override
+    public String initInfo() {
+        return "该漏洞需要初始化的信息";
+    }
+
     @Override
     public String setExploitTitle() {
         return "xxx插件xxx利用方式";
@@ -51,3 +55,4 @@ public class EXPDEMO implements Exploit {
 
     }
 }
+
