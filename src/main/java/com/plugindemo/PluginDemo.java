@@ -1,9 +1,14 @@
 package com.plugindemo;
 
 
+import com.ha1ey.CandleDragon.plugin.Exploit;
 import com.ha1ey.CandleDragon.plugin.IPlugin;
 import com.ha1ey.CandleDragon.plugin.PluginInfo;
+import com.plugindemo.exp.EXPDEMO;
 import com.plugindemo.poc.POCDEMO;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PluginDemo implements IPlugin {
     @Override
@@ -19,8 +24,8 @@ public class PluginDemo implements IPlugin {
         pluginInfo.setVulDisclosureTime("披露时间");
         pluginInfo.setVulScope("漏洞适应版本");
 
-//        List<Exploit> exploits = new ArrayList<>();     //新建一个用来存放exp的list
-//        exploits.add(new EXPDEMO());        //有几个exp就添加几个
+        List<Exploit> exploits = new ArrayList<>();     //新建一个用来存放exp的list
+        exploits.add(new EXPDEMO());        //有几个exp就添加几个
 //        exploits.add(new EXPDEMO1());
 //        exploits.add(new EXPDEMO2());
 
