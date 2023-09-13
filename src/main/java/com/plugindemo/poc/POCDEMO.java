@@ -1,6 +1,7 @@
 package com.plugindemo.poc;
 
 
+import cn.hutool.http.HttpRequest;
 import com.ha1ey.CandleDragon.plugin.Poc;
 import com.ha1ey.CandleDragon.plugin.Result;
 
@@ -13,7 +14,7 @@ public class POCDEMO implements Poc {
         targetInfo.getCharset();    //获取获取字符编码
         targetInfo.getTimeout();    //获取自定义超时时间
         targetInfo.getUserAgent();  //获取自定义UA头，默认随机
-
+        targetInfo.getCookie();     //获取自定义的Cookie
 
         result.setPocVul(true);     //是否存在漏洞，最后会在扫描结果的表格中显示
         result.setPocVul(false);

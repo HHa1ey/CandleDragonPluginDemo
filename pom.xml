@@ -21,7 +21,7 @@
         <dependency>
             <groupId>io.github.HHa1ey</groupId>
             <artifactId>CandleDragonPluginSDK</artifactId>
-            <version>1.3.7</version>
+            <version>1.3.8</version>
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -61,7 +61,7 @@
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
                     <outputDirectory>
-                        ${project.build.outputDirectory}
+                        ${project.build.directory}
                     </outputDirectory>
                 </configuration>
                 <executions>

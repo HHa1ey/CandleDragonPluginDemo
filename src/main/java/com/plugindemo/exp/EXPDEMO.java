@@ -46,7 +46,6 @@ public class EXPDEMO implements Exploit {
         targetInfo.getUserAgent();  //获取自定义UA头，默认随机
 
         argsmap.get("参数名字");    //获取上面自定义的参数名的value
-
         result.printFail("");   //打印失败信息
         result.printInfo("");   //打印普通信息
         result.printRaw("");    //打印原始信息
